@@ -1,0 +1,614 @@
+<main>
+
+    <section class="svelte-10wycpm" [ngClass]="{'scrolled': scrolled }">
+        <img class="toplogo svelte-10wycpm" src="/assets/img/logo.png" alt="Zoos" height="24" width="75">
+        <button class="svelte-10wycpm">
+            <div class="nav_icon svelte-10wycpm" (click)=" openModel(true)">
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+            </div>
+        </button>
+    </section>
+
+    <!-- model -->
+    <section class="svelte-10wycpm " [@slideFromTopCenter] *ngIf="model">
+        <img class="toplogo svelte-10wycpm" src="/assets/img/logo.png" alt="Zoos" height="24" width="75">
+        <button class="svelte-10wycpm">
+            <div class="nav_icon svelte-10wycpm open" (click)="openModel(false)">
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+                <span class="svelte-10wycpm"></span>
+            </div>
+        </button>
+        <div class="modal-background svelte-n4684c"></div>
+        <div class="modal svelte-n4684c" role="dialog" aria-modal="true">
+            <div class="modal_body svelte-10wycpm">
+                <img src="/assets/img/logo.png" alt="" class="svelte-10wycpm">
+               
+                <div class="link_section">
+                    <a href="" routerLink="aboutus" class="svelte-10wycpm">About Us</a>
+                    <a routerLink="/terms" class="svelte-10wycpm">Terms of Service</a>
+                    <a routerLink="/privacy" class="svelte-10wycpm">Privacy Policy</a>
+                    <a routerLink="/cookies" class="svelte-10wycpm">Cookies Policy</a>
+                    <a routerLink="/fairplay" class="svelte-10wycpm">Fairplay</a>
+                    <a href="https://medium.com/@Zoos" class="svelte-10wycpm">Blog</a>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="svelte-ahv8wn">
+        <div class="hero-text svelte-ahv8wn">
+            <h1 class="svelte-ahv8wn"><span class="hero-line-1 svelte-ahv8wn">Let`s Play</span>
+                <div class="svelte-ahv8wn"><span class="hero-line-2 svelte-ahv8wn">{{changeText}}</span></div>
+            </h1>
+            <h3 class="svelte-ahv8wn">Play Ludo, Candy Clash and Runner on India’s best multi gaming app!</h3>
+        </div>
+        <div class="hero-animation">
+
+            <!-- <style>
+                .rotate-animation {
+                    position: relative;
+                }
+
+                .rotate-animation img {
+                    bottom: 0;
+                    animation: rotate 2s infinite linear;
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform-origin: bottom;
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform-origin: bottom;
+                        transform: rotate(-80deg);
+                    }
+                }
+            </style> -->
+            <!-- <div class="animation_section animation_Hero_games svelte-ahv8wn rotate-animation ">
+                <img class="" width="200" src="assets/img/phone.png" alt="">
+
+            </div> -->
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <img class="" width="200" src="assets/img/phone.png" alt="">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- // ticker-scroll SECTION -->
+    <section class="svelte-1q5zci2">
+        <div class="ticker-container ticker-top svelte-1q5zci2">
+            <div class="ticker-scroll svelte-1q5zci2">
+                <ul class="svelte-1q5zci2">
+                    <li class="svelte-1q5zci2"><img width="40" height="40"
+                            src="/assets/img/ticker/ticker-responsible.png" alt="Responsible Gaming"
+                            class="svelte-1q5zci2"> <span>Responsible Gaming</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-withdraws.png"
+                            alt="Instant Withdraws" class="svelte-1q5zci2"> <span>Instant Withdraws</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-fairplay.png"
+                            alt="100% Fairplay" class="svelte-1q5zci2"> <span>100% Fairplay</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-safe.png"
+                            alt="100% Safe" class="svelte-1q5zci2"> <span>100% Safe</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-AIGF.png"
+                            alt="AIGF Certified" class="svelte-1q5zci2"> <span>AIGF Certified</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-win.png"
+                            alt="Win ₹1 Cr" class="svelte-1q5zci2"> <span>Win ₹1 Cr</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-payu.png"
+                            alt="PayU" class="svelte-1q5zci2">
+                        <span>PayU</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-paytm.png"
+                            alt="PayTM" class="svelte-1q5zci2">
+                        <span>PayTM</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-cashFree.png"
+                            alt="CashFree" class="svelte-1q5zci2"> <span>CashFree</span></li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40"
+                            src="/assets/img/ticker/ticker-responsible.png" alt="Responsible Gaming"
+                            class="svelte-1q5zci2"> <span>Responsible Gaming</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-withdraws.png"
+                            alt="Instant Withdraws" class="svelte-1q5zci2"> <span>Instant Withdraws</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-fairplay.png"
+                            alt="100% Fairplay" class="svelte-1q5zci2"> <span>100% Fairplay</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-safe.png"
+                            alt="100% Safe" class="svelte-1q5zci2"> <span>100% Safe</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-AIGF.png"
+                            alt="AIGF Certified" class="svelte-1q5zci2"> <span>AIGF Certified</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-win.png"
+                            alt="Win ₹1 Cr" class="svelte-1q5zci2"> <span>Win ₹1 Cr</span> </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-payu.png"
+                            alt="PayU" class="svelte-1q5zci2">
+                        <span>PayU</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-paytm.png"
+                            alt="PayTM" class="svelte-1q5zci2">
+                        <span>PayTM</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img width="40" height="40" src="/assets/img/ticker/ticker-cashFree.png"
+                            alt="CashFree" class="svelte-1q5zci2"> <span>CashFree</span> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ticker-container ticker-bottom svelte-1q5zci2">
+            <div class="ticker-scroll svelte-1q5zci2">
+                <ul class="svelte-1q5zci2">
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-wheel.png" alt="Spin Wheel"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Spin Wheel</span></li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-loyalty.png" alt="Loyalty System"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Loyalty System</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-store.png" alt="Store" loading="lazy"
+                            width="40" height="40" class="svelte-1q5zci2"> <span>Store</span></li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-leaderboards.png" alt="Leaderboards"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Leaderboards</span></li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-pass.png" alt="Season Pass"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Season Pass</span></li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-offers.png" alt="Deposit Offers"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Deposit Offers</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-coupon.png" alt="Coupon"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Coupon</span></li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-wheel.png" alt="Spin Wheel"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Spin Wheel</span> </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-loyalty.png" alt="Loyalty System"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Loyalty System</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-store.png" alt="Store" loading="lazy"
+                            width="40" height="40" class="svelte-1q5zci2"> <span>Store</span> </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-leaderboards.png" alt="Leaderboards"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Leaderboards</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-pass.png" alt="Season Pass"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Season Pass</span> </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-offers.png" alt="Deposit Offers"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Deposit Offers</span>
+                    </li>
+                    <li class="svelte-1q5zci2"><img src="/assets/img/ticker/ticker-coupon.png" alt="Coupon"
+                            loading="lazy" width="40" height="40" class="svelte-1q5zci2"> <span>Coupon</span> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Feature Section -->
+    <section class="features_section svelte-1o2b7g4">
+        <div class="feature svelte-1o2b7g4 " [ngClass]="{ 'active': activeFeatureIndex  === 0 }">
+            <div class="img_bx svelte-1o2b7g4 load_bg">
+                <!-- <img class="inner_bg svelte-1o2b7g4"  src="/assets/feature_inner_bg.svg" alt="" loading="lazy">  -->
+                    <img class="feature_icon svelte-1o2b7g4"
+                    src="/assets/win_big.png" alt="" loading="lazy"></div>
+            <div class="content">
+                <h4 class="svelte-1o2b7g4">Win Big</h4>
+                <h6 class="svelte-1o2b7g4">Prizes over 1Cr Won Daily</h6>
+            </div>
+        </div>
+        <div class="feature svelte-1o2b7g4" [ngClass]="{ 'active': activeFeatureIndex  === 1 }">
+            <div class="img_bx svelte-1o2b7g4 load_bg">
+                <!-- <img class="inner_bg svelte-1o2b7g4"
+                    src="/assets/feature_inner_bg.svg" alt="" loading="lazy"> -->
+                     <img class="feature_icon svelte-1o2b7g4"
+                    src="/assets/people.png" alt="" loading="lazy"></div>
+            <div class="content">
+                <h4 class="svelte-1o2b7g4">Real Players</h4>
+                <h6 class="svelte-1o2b7g4">Over 25,000 daily active players</h6>
+            </div>
+        </div>
+        <div class="feature svelte-1o2b7g4" [ngClass]="{ 'active': activeFeatureIndex  === 2 }">
+            <div class="img_bx svelte-1o2b7g4 load_bg">
+                <!-- <img class="inner_bg svelte-1o2b7g4"
+                    src="/assets/feature_inner_bg.svg" alt="" loading="lazy"> -->
+                     <img class="feature_icon svelte-1o2b7g4"
+                    src="/assets/withdrawal.png" alt="" loading="lazy"></div>
+            <div class="content">
+                <h4 class="svelte-1o2b7g4">Instant Withdrawal</h4>
+                <h6 class="svelte-1o2b7g4">Withdraw without any delays or stops!</h6>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Match Section -->
+
+    <section class="animation_tabs_section svelte-1opykw0" style="--timer: 8000ms;">
+        <h3 class="heading"><span class="svelte-1opykw0">01.</span>Match</h3>
+
+        <!-- <div class="tab_selector svelte-1opykw0" #tabSelector>
+            <span class="svelte-1opykw0 animate" [class.active]="activeIndex === 0">
+                <p class="medium svelte-1opykw0">Quick Ludo</p>
+            </span><span class="svelte-1opykw0 animate " [class.active]="activeIndex === 1">
+                <p class="medium svelte-1opykw0">Fruit Chop</p>
+            </span><span class="svelte-1opykw0 animate" [class.active]="activeIndex === 2">
+                <p class="medium svelte-1opykw0">Snake Bite</p>
+            </span>
+        </div> -->
+
+        <div class="tab_section svelte-1opykw0">
+            <div class="play_bg svelte-1opykw0 load_bg"></div>
+            <div class="accordion_section fade svelte-1opykw0">
+                <p class="medium svelte-1opykw0">The most fun Online Gaming app in India! Emojis, slick experience and
+                    much more.. Start playing now!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/play.png" alt="">
+                    <!-- <lottie-player id="Play_0" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0 active ">
+                <p class="medium svelte-1opykw0">Zoos online ludo is an absolute gem, delivering an extraordinary gaming experience!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/play.png" alt="">
+                    <!-- <lottie-player id="Play_1" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;">
+                    </lottie-player> -->
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0 ">
+                <p class="medium svelte-1opykw0">Play snake and ladder & win exciting price by biting your oponenets</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/play.png" alt="">
+                    <!-- <lottie-player id="Play_2" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play section -->
+
+    <section class="animation_tabs_section svelte-1opykw0" style="--timer: 8000ms;">
+        <h3 class="heading"><span class="svelte-1opykw0">02.</span> Play</h3>
+
+        <!-- <div class="tab_selector svelte-1opykw0" #tabSelector>
+            <span class="svelte-1opykw0  animate" [class.active]="activeIndex === 0">
+                <p class="medium svelte-1opykw0">Fun</p>
+            </span>
+            <span class="svelte-1opykw0 animate" [class.active]="activeIndex === 1">
+                <p class="medium svelte-1opykw0">Speed</p>
+            </span>
+            <span class="svelte-1opykw0 animate" [class.active]="activeIndex === 2">
+                <p class="medium svelte-1opykw0">Safety</p>
+            </span>
+        </div> -->
+
+        <div class="tab_section svelte-1opykw0">
+            <div class="accordion_section fade svelte-1opykw0 active">
+                <p class="medium svelte-1opykw0">Have fun with awesome mini games, offline events, engagement offers and
+                    more on the Zoos app!</p>
+                <div class="content svelte-1opykw0">
+                    <!-- <lottie-player id="Enjoy_0" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                    <img src="assets/img/enjoy.png" alt="">
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0">
+                <p class="medium svelte-1opykw0">Get instant withdrawal and instant customer support! Play, win and earn
+                    without any hiccups!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/enjoy.png" alt="">
+                    <!-- <lottie-player id="Enjoy_1" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0">
+                <p class="medium svelte-1opykw0">Play with confidence with our class leading security and anti bot
+                    measures!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/enjoy.png" alt="">
+                    <!-- <lottie-player id="Enjoy_2" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- win -->
+
+    <section class="animation_tabs_section svelte-1opykw0" style="--timer: 8000ms;">
+        <h3 class="heading"><span class="svelte-1opykw0">03.</span> Win</h3>
+
+        <!-- <div class="tab_selector svelte-1opykw0" #tabSelector>
+            <span class="svelte-1opykw0 animate" [class.active]="activeIndex === 0">
+                <p class="medium svelte-1opykw0">Prizes</p>
+            </span>
+            <span class="svelte-1opykw0 animate" [class.active]="activeIndex === 1">
+                <p class="medium svelte-1opykw0">Offers</p>
+            </span>
+            <span class="svelte-1opykw0 animate " [class.active]="activeIndex === 2">
+                <p class="medium svelte-1opykw0">Store</p>
+            </span>
+        </div> -->
+        <div class="tab_section svelte-1opykw0">
+            <div class="accordion_section fade svelte-1opykw0">
+                <p class="medium svelte-1opykw0">Great prizes everyday! Win upto 1Cr daily and get lots of goodies even
+                    if you don’t win</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/win.png" alt="">
+                    <!-- <lottie-player id="Win_0" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0">
+                <p class="medium svelte-1opykw0">Get the most out of your money with awesome 100% Cashback offers on
+                    Zoos!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/win.png" alt="">
+                    <!-- <lottie-player id="Win_1" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                </div>
+            </div>
+            <div class="accordion_section fade svelte-1opykw0 active">
+                <p class="medium svelte-1opykw0">Buy prizes from the Store and get rewards even if you lose! Only on
+                    Zoos!</p>
+                <div class="content svelte-1opykw0">
+                    <img src="assets/img/win.png" alt="">
+                    <!-- <lottie-player id="Win_2" autoplay="" loop="" mode="normal"
+                        speed="1" background="transparent" style="display: block;"></lottie-player> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonial -->
+
+    <section class="testimonials_section svelte-105oniz">
+        <div class="testimonial_card svelte-105oniz load_bg">
+            <h4 class="heading svelte-105oniz">Trusted by more than <span class="svelte-105oniz">50K+</span>Players</h4>
+
+            <img class="quotes svelte-105oniz" src="/assets/img/testimonials_header.svg" alt="quotes" loading="lazy">
+            <div class="slides svelte-105oniz">
+                <div class="content fade svelte-105oniz active" id="slide0">
+                    <div class="avatar svelte-105oniz">
+                        <img src="/assets/img/testimonial_1.png" alt="" loading="lazy"
+                            class="svelte-105oniz"></div>
+                    <h4 class="name svelte-105oniz">Sandy</h4>
+                    <p class="desc medium svelte-105oniz">
+                        I recently had the pleasure of diving into the immersive world of Zoo's Best Real Cash Game, and I must say, it exceeded all my expectations. This online gaming app is an absolute gem, delivering an extraordinary gaming experience that left me completely hooked from the moment I started playing.
+                    </p>
+                </div>
+            </div>
+            <div class="pagination svelte-105oniz"><a href="#slide0" class="svelte-105oniz active"></a></div>
+        </div>
+    </section>
+
+
+    <!-- policies -->
+
+    <section class="policies_section svelte-dguvuh">
+        <h3 class="heading svelte-dguvuh">Our Policies</h3>
+        <p class="desc medium svelte-dguvuh">We ensure fun &amp; fair gameplay <br>
+            using the following rules</p>
+        <div class="policy_badges_section svelte-dguvuh">
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">RNG <br> Certified</p> 
+                <img src="/assets/img/certified_badge.png" alt=""
+                   class="svelte-dguvuh"> 
+                   <img class="overlay svelte-dguvuh" src="/assets/img/certified_badge.png" alt="" loading="lazy">
+            </div>
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">Dedicated <br> Customer Support</p> <img
+                    src="/assets/img/customer_badge.png" alt="" style="width: 4rem;" loading="lazy"
+                    class="svelte-dguvuh">
+                <img class="overlay svelte-dguvuh" src="/assets/img/customer_badge.png" alt="" style="width: 4rem;" loading="lazy">
+            </div>
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">100% Safe &amp; <br> Secure</p> <img src="/assets/img/secure_badge.png"
+                    alt="" loading="lazy" class="svelte-dguvuh"> <img class="overlay svelte-dguvuh"
+                    src="/assets/img/secure_badge.png" alt="" loading="lazy">
+            </div>
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">AIGF <br> Member</p> <img src="/assets/img/aigf_badge.png" alt=""
+                    loading="lazy" class="svelte-dguvuh"> <img class="overlay svelte-dguvuh"
+                    src="/assets/img/aigf_badge.png" alt="" loading="lazy">
+            </div>
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">Responsible <br> Gaming</p> <img src="/assets/img/responsible_badge.png"
+                    alt="" loading="lazy" class="svelte-dguvuh"> <img class="overlay svelte-dguvuh"
+                    src="/assets/img/responsible_badge.png" alt="" loading="lazy">
+            </div>
+            <div class="policy_badge svelte-dguvuh load_bg">
+                <p class="medium svelte-dguvuh">Fairplay <br> Certified</p> <img src="/assets/img/fairplay_badge.png"
+                    alt="" style="width: 6rem;" loading="lazy" class="svelte-dguvuh"> <img class="overlay svelte-dguvuh"
+                    src="/assets/img/fairplay_badge.png" alt="" style="width: 6rem;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How To install -->
+
+    <section class="howtoinstall_section svelte-1ruul9v" id="install">
+        <h3 class="heading svelte-1ruul9v">How to Install</h3>
+        <p class="desc medium svelte-1ruul9v">Follow this 3 simple steps to start playing games</p>
+        <div class="install_help svelte-1ruul9v">
+            <div class="install_step_bx svelte-1ruul9v load_bg"><img class="blur svelte-1ruul9v"
+                    src="/assets/install_blur.png" alt="" loading="lazy">
+                <div class="step_desc svelte-1ruul9v">
+                    <div class="step svelte-1ruul9v">
+                        <h3 class="svelte-1ruul9v">1</h3>
+                    </div>
+                    <h6 class="svelte-1ruul9v">Tap to <span class="svelte-1ruul9v">“Download”</span> the App to install
+                    </h6>
+                </div> <img src="/assets/img/install_1.png" alt="" loading="lazy" class="svelte-1ruul9v">
+            </div>
+            <div class="install_step_bx svelte-1ruul9v load_bg"><img class="blur svelte-1ruul9v"
+                    src="/assets/install_blur.png" alt="" loading="lazy">
+                <div class="step_desc svelte-1ruul9v">
+                    <div class="step svelte-1ruul9v">
+                        <h3 class="svelte-1ruul9v">2</h3>
+                    </div>
+                    <h6 class="svelte-1ruul9v">Tap <span class="svelte-1ruul9v">“Open”</span> to start the downloading
+                    </h6>
+                </div> <img src="/assets/img/install_2.png" alt="" loading="lazy" class="svelte-1ruul9v">
+            </div>
+            <div class="install_step_bx svelte-1ruul9v load_bg"><img class="blur svelte-1ruul9v"
+                    src="/assets/install_blur.png" alt="" loading="lazy">
+                <div class="step_desc svelte-1ruul9v">
+                    <div class="step svelte-1ruul9v">
+                        <h3 class="svelte-1ruul9v">3</h3>
+                    </div>
+                    <h6 class="svelte-1ruul9v"><span class="svelte-1ruul9v">“Allow”</span> installing the Zoos app
+                    </h6>
+                </div> <img src="/assets/img/install_3.png" alt="" loading="lazy" class="svelte-1ruul9v">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faqs_section svelte-1ldu36w"><img class="header_img svelte-1ldu36w" src="/assets/img/faq_header.png"
+            alt="" loading="lazy">
+        <h3 class="heading svelte-1ldu36w">Frequently <br> Asked Questions</h3>
+        <!-- <div class="tab_selector svelte-1ldu36w">
+            <span (click)="faqClick(1)" class="svelte-1ldu36w" [class.active]="faq == '1'">
+                <p class="medium svelte-1ldu36w">Quick Ludo</p>
+            </span>
+            <span (click)="faqClick(2)" class="svelte-1ldu36w" [class.active]="faq == '2'">
+                <p class="medium svelte-1ldu36w">Fruit Chop</p>
+            </span>
+            <span (click)="faqClick(3)" class="svelte-1ldu36w" [class.active]="faq == '3'">
+                <p class="medium svelte-1ldu36w">Snake Bite</p>
+            </span>
+        </div> -->
+        <div class="tab_section">
+            <div *ngIf="faq == 1 " class=" accordion_section fade svelte-1ldu36w active">
+                <div class=" svelte-16nh0q2" *ngFor="let item of quickLudo ; let i = index">
+                    <div class="heading svelte-16nh0q2 open" (click)="toggleAccordion(i)">
+                        <p class="large svelte-16nh0q2">{{ item.title }}</p>
+                        <img *ngIf="item.open" src="/assets/accordion_minus.svg" alt="" loading="lazy"
+                            class="svelte-16nh0q2">
+                        <img *ngIf="!item.open" src="/assets/accordion_plus.svg" alt="" loading="lazy"
+                            class="svelte-16nh0q2">
+                    </div>
+                    <ul class="svelte-16nh0q2 " [class.hide]="!item.open">
+                        <p class="medium content svelte-16nh0q2">{{item.desc}} </p>
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+            <div *ngIf="faq == 2" class="accordion_section fade svelte-1ldu36w active">
+                <div class="svelte-16nh0q2" *ngFor="let item of quickLudo">
+                    <div class="heading svelte-16nh0q2 open">
+                        <p class="large svelte-16nh0q2">How to start playing Zoos Rummy?</p> <img
+                            src="/assets/accordion_minus.svg" alt="" loading="lazy" class="svelte-16nh0q2">
+                    </div>
+                    <ul class="svelte-16nh0q2">
+                        <p class="medium content svelte-16nh0q2">Simple! Register yourself for FREE on our App.<br>It
+                            takes only a few seconds. Then you are good to start winning on Zoos Rummy. </p>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div *ngIf="faq == 3" class="accordion_section fade svelte-1ldu36w active">
+                <div class="svelte-16nh0q2" *ngFor="let item of snakeBite">
+                    <div class="heading svelte-16nh0q2 open">
+                        <p class="large svelte-16nh0q2"> {{item.title}}</p> <img src="/assets/accordion_minus.svg"
+                            alt="" loading="lazy" class="svelte-16nh0q2">
+                    </div>
+                    <ul class="svelte-16nh0q2">
+                        <p class="medium content svelte-16nh0q2">{{item.desc}} </p>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <section class="footer_section svelte-1l8h657">
+        <div class="logo_section svelte-1l8h657">
+            <div class="app_logo"><img class="white_logo svelte-1l8h657" src="/assets/img/logo.png" alt=""
+                    loading="lazy"></div>
+            <div class="social_logo svelte-1l8h657"><a href="https://www.facebook.com/GetZoos?mibextid=ZbWKwL"
+                    class="svelte-1l8h657"><img src="/assets/facebook_logo.svg" alt="" loading="lazy"
+                        class="svelte-1l8h657"></a> <a href="https://www.instagram.com/getZoos/"
+                    class="svelte-1l8h657"><img src="/assets/insta_logo.svg" alt="" loading="lazy"
+                        class="svelte-1l8h657"></a> <a href="https://twitter.com/GetZoos/" class="svelte-1l8h657"><img
+                        src="/assets/twitter_logo.svg" alt="" loading="lazy" class="svelte-1l8h657"></a> <a
+                    href="https://t.me/nostragamusproofficial" class="svelte-1l8h657"><img
+                        src="/assets/telegram_logo.svg" alt="" loading="lazy" class="svelte-1l8h657"></a></div>
+        </div>
+        <div class="images_section svelte-1l8h657"><img class="proudly svelte-1l8h657" src="/assets/img/proudly.png"
+                alt="" loading="lazy"> <img class="gaming svelte-1l8h657" src="/assets/gaming.png" alt=""
+                loading="lazy"> <img class="hands svelte-1l8h657" src="/assets/img/footer_hands.png" alt=""
+                loading="lazy"></div>
+        <div class="payment_partners svelte-1l8h657">
+            <p class="heading svelte-1l8h657">Payment Partners</p>
+            <div class="partner_logo_section svelte-1l8h657"><span class="svelte-1l8h657"><img
+                        src="/assets/img/cashfree.png" alt="" loading="lazy" class="svelte-1l8h657"></span> <span
+                    class="svelte-1l8h657"><img src="/assets/img/paytm.png" alt="" loading="lazy"
+                        class="svelte-1l8h657"></span> <span class="svelte-1l8h657"><img src="/assets/img/payu.png"
+                        alt="" loading="lazy" class="svelte-1l8h657"></span> <span class="svelte-1l8h657">
+                    <img src="/assets/img/juspay.png" alt="" loading="lazy" class="svelte-1l8h657"></span></div>
+        </div>
+        <div class="nav_links_section svelte-1l8h657">
+            <div class="legal svelte-1l8h657">
+                <p class="svelte-1l8h657">Legal</p>
+
+                 <a routerLink="/aboutus" class="svelte-1l8h657">About</a>
+                <a routerLink="/terms" class="svelte-1l8h657">Terms of service</a> 
+                <a routerLink="/privacy" class="svelte-1l8h657">Privacy Poilcy</a>
+                <a routerLink="/dispute" class="svelte-1l8h657">Dispute Policy</a>
+                <a routerLink="/cookies" class="svelte-1l8h657">Cookies Policy</a>
+            </div>
+            <div class="gameplay svelte-1l8h657">
+                <p class="svelte-1l8h657">Other</p> 
+                <a routerLink="/fairplay" class="svelte-1l8h657">Fairplay</a>
+                 <a routerLink="/support" class="svelte-1l8h657">Support</a>
+                  <a href="https://medium.com/@Zoos" class="svelte-1l8h657">Blog</a>
+            </div>
+        </div>
+        <div class="disclaimer svelte-1l8h657"><img src="/assets/img/deposit_box.png" width="20" alt="" loading="lazy"
+                class="svelte-1l8h657">
+            <p class="svelte-1l8h657">This game may be habit-forming or financially risky <br>
+                &amp; Play responsibly.</p>
+        </div>
+        <div class="copyright svelte-1l8h657">
+            <p class="svelte-1l8h657">© 2023 - Evantage Future Game Solution Private Limited</p>
+        </div>
+    </section>
+
+
+
+    <!-- arrow up -->
+
+    <div *ngIf="scrolled"  class="back_to_top svelte-69zl5w" (click)="toTop()"><img src="/assets/up_arrow.svg" alt=""></div>
+
+
+
+
+    <!-- download Seection -->
+
+    <section _ngcontent-lin-c17="" class="download_section svelte-b3sc0h ng-tns-c17-0">
+        <button _ngcontent-lin-c17="" href="#install" class="svelte-b3sc0h ng-tns-c17-0">Install Now</button>
+        <p _ngcontent-lin-c17="" class="svelte-b3sc0h ng-tns-c17-0"> Get upto
+            <span _ngcontent-lin-c17="" class="ng-tns-c17-0">₹</span>100 bonus instant
+        </p>
+    </section>

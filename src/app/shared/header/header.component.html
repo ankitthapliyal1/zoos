@@ -1,0 +1,49 @@
+
+
+<div class="header_section">
+    <div class="logo_bx">
+        <img  (click)="home()"   class="logo" src="/assets/img/logo.png" alt="ZOOS-logo">
+    </div>
+    <div class="nav_bar">
+        <a class="svelte-cc8lwu" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+        <a class="svelte-cc8lwu" routerLink="/terms" routerLinkActive="active">Terms of Service</a>
+        <a class="svelte-cc8lwu" routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
+        <a class="svelte-cc8lwu" routerLink="/fairplay" routerLinkActive="active">Fairplay</a>
+        <a class="svelte-cc8lwu" routerLink="/refund" routerLinkActive="active">Dispute Policy</a>
+        <a class="svelte-cc8lwu" routerLink="/cookies" routerLinkActive="active">Cookies Policy</a>
+    </div>
+    <div class="nav_bar_mob svelte-cc8lwu">
+        <button class="svelte-cc8lwu">
+            <div *ngIf="!model" class="nav_icon svelte-cc8lwu " (click)=" openModel(true)">
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+            </div>
+
+            <div *ngIf="model" class="nav_icon svelte-cc8lwu open" (click)=" openModel(false)">
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+                <span class="svelte-cc8lwu"></span>
+            </div>
+        </button>
+
+        <div class="modal-background svelte-n4684c"></div>
+        <div [@slideFromTopCenter] *ngIf="model" class="modal svelte-n4684c" role="dialog" aria-modal="true">
+            <div class="modal_body svelte-cc8lwu">
+                <img src="/assets/img/logo.png" routerLink=""  alt="" class="svelte-cc8lwu">
+                <div class="link_section">
+                    <a class="svelte-cc8lwu" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+                    <a class="svelte-cc8lwu" routerLink="/terms" routerLinkActive="active">Terms of Service</a>
+                    <a class="svelte-cc8lwu" routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
+                    <a class="svelte-cc8lwu" routerLink="/fairplay" routerLinkActive="active">Fairplay</a>
+                    <a class="svelte-cc8lwu"  routerLink="/dispute" routerLinkActive="active">Dispute Policy</a>
+                    <a class="svelte-cc8lwu"  routerLink="/cookies" routerLinkActive="active">Cookies Policy</a>
+                 
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
